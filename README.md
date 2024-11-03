@@ -53,10 +53,12 @@ This project provides a simple backend API for managing blog posts. It includes 
 - **`POST /blogposts/`**
   Create a new blog post. You must provide the Bearer Token in the Authorization header, along with the title and content in the request body.
   Example request body:
+  ```json
   {
   "title": "Your Blog Post title",
   "content": "The content of your blog post."
   }
+  ```
   Example Authorization header:
   Authorization: Bearer your_token_here
 
@@ -66,10 +68,12 @@ This project provides a simple backend API for managing blog posts. It includes 
 - **`PUT /blogposts/<postID>`**
   Update an existing blog post by providing the Bearer Token in the Authorization header. You can modify the title and/or content.
   Example request body:
+  ```json
   {
   "title": "Updated Title",
   "content": "Updated content of the blog post."
   }
+  ```
 
 - **`GET /myblogposts/`**
   Retrieve a list of all blog posts created by the authenticated user. You must provide the Bearer Token in the Authorization header.
